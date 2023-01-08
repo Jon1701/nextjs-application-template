@@ -4,6 +4,7 @@ PATH_NODE_MODULES_BIN=${PATH_NODE_MODULES}/.bin
 
 # Ports.
 PORT_DEV_SERVER=8080
+PORT_STAGING_SERVER=8081
 
 # Installs project dependencies.
 install: install-node-modules
@@ -28,3 +29,9 @@ dev:
 		dev \
 		-p ${PORT_DEV_SERVER}
 
+# Starts the staging server.
+staging: build
+	@echo "Starting the staging server..."
+	@${PATH_NODE_MODULES_BIN}/next \
+		start \
+		-p ${PORT_STAGING_SERVER}
