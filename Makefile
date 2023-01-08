@@ -5,6 +5,7 @@ PATH_NODE_MODULES_BIN=${PATH_NODE_MODULES}/.bin
 # Ports.
 PORT_DEV_SERVER=8080
 PORT_STAGING_SERVER=8081
+PORT_STORYBOOK=6006
 
 # Installs project dependencies.
 install: install-node-modules disable-nextjs-telemetry
@@ -31,6 +32,12 @@ run-prettier:
 	@${PATH_NODE_MODULES_BIN}/prettier \
 		--check **/*.{ts,tsx,js}
 	@echo "Done running Prettier."
+
+# Runs Storybook.
+run-storybook:
+	@echo "Starting Storybook..."
+	@${PATH_NODE_MODULES_BIN}/start-storybook	\
+		-p ${PORT_STORYBOOK}
 
 # Creates a production build.
 build:
