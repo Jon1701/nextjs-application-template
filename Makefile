@@ -15,6 +15,13 @@ install-node-modules:
 	@npm ci
 	@echo "Done installing Node.js modules."
 
+# Runs ESLint.
+run-eslint:
+	@echo "Running ESLint..."
+	@${PATH_NODE_MODULES_BIN}/next \
+		lint
+	@echo "Done running ESLint."
+
 # Creates a production build.
 build:
 	@echo "Creating production build..."
