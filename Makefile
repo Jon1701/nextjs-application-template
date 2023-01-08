@@ -15,6 +15,9 @@ install-node-modules:
 	@npm ci
 	@echo "Done installing Node.js modules."
 
+# Runs all linters.
+lint: run-eslint run-prettier
+
 # Runs ESLint.
 run-eslint:
 	@echo "Running ESLint..."
