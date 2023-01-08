@@ -21,6 +21,7 @@ The following `make` commands are available:
 - `make install` to install project dependencies
   - `make install-node-modules` to install Node.js dependencies
 - `make run-eslint` to run ESLint
+- `make run-prettier` to run Prettier
 - `make dev` to start the development server
 - `make staging` to start the staging server
 - `make build` to create a production build

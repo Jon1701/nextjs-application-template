@@ -22,6 +22,13 @@ run-eslint:
 		lint
 	@echo "Done running ESLint."
 
+# Runs Prettier.
+run-prettier:
+	@echo "Running Prettier..."
+	@${PATH_NODE_MODULES_BIN}/prettier \
+		--check **/*.{ts,tsx,js}
+	@echo "Done running Prettier."
+
 # Creates a production build.
 build:
 	@echo "Creating production build..."
