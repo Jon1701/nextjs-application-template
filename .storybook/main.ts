@@ -1,4 +1,5 @@
-// Imports Storybook's configuration API
+import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
+import type { Configuration } from 'webpack';
 import type { StorybookConfig } from '@storybook/core-common';
 
 const config: StorybookConfig = {
@@ -12,6 +13,18 @@ const config: StorybookConfig = {
   core: {
     builder: '@storybook/builder-webpack5',
     disableTelemetry: true,
+  },
+  webpackFinal: async (config: Configuration) => {
+    if (config !== undefined && config.resolve !== undefined) {
+      config.resolve.plugins = [
+        ...(config.resolve.plugins || []),
+        new TsconfigPathsPlugin({
+          extensions: config.resolve.extensions,
+        }),
+      ];
+    }
+
+    return config;
   },
 };
 
