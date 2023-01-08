@@ -14,9 +14,17 @@ install-node-modules:
 	@npm ci
 	@echo "Done installing Node.js modules."
 
+# Creates a production build.
+build:
+	@echo "Creating production build..."
+	@${PATH_NODE_MODULES_BIN}/next \
+		build
+	@echo "Done creating production build."
+
 # Starts the development server.
 dev:
 	@echo "Starting development server..."
 	@${PATH_NODE_MODULES_BIN}/next	\
 		dev \
 		-p ${PORT_DEV_SERVER}
+

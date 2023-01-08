@@ -21,3 +21,4 @@ The following `make` commands are available:
 - `make install` to install project dependencies
   - `make install-node-modules` to install Node.js dependencies
 - `make dev` to start the development server
+- `make build` to create a production build
