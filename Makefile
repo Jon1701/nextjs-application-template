@@ -7,7 +7,7 @@ PORT_DEV_SERVER=8080
 PORT_STAGING_SERVER=8081
 
 # Installs project dependencies.
-install: install-node-modules
+install: install-node-modules disable-nextjs-telemetry
 
 # Installs Node.js modules.
 install-node-modules:
@@ -35,3 +35,10 @@ staging: build
 	@${PATH_NODE_MODULES_BIN}/next \
 		start \
 		-p ${PORT_STAGING_SERVER}
+
+# Disables Next.js telemetry.
+disable-nextjs-telemetry:
+	@echo "Disabling Next.js telemetry..."
+	@${PATH_NODE_MODULES_BIN}/next \
+		telemetry disable
+	@echo "Done disabling Next.js telemetry."
