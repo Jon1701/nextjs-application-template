@@ -67,8 +67,8 @@ disable-nextjs-telemetry:
 		telemetry disable
 	@echo "Done disabling Next.js telemetry."
 
-# Runs tests on scripts.
-test-scripts:
-	@echo "Running tests on scripts..."
+# Runs all tests.
+test:
+	@echo "Running tests..."
 	@${PATH_NODE_MODULES_BIN}/jest
-	@echo "Done running tests on scripts."
+	@echo "Done running tests."

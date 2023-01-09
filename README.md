@@ -30,5 +30,5 @@ The following `make` commands are available:
 - `make dev` to start the development server
 - `make staging` to start the staging server
 - `make build` to create a production build
-- `make test-scripts` to run tests on scripts
+- `make test` to run all tests
 - `make disable-nextjs-telemetry` to disable Next.js telemetry
