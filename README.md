@@ -26,6 +26,7 @@ The following `make` commands are available:
 - `make lint` to run all linters
   - `make run-eslint` to run ESLint
   - `make run-prettier` to run Prettier
+  - `make run-stylelint` to run Stylelint
 - `make run-storybook` to run Storybook
 - `make dev` to start the development server
 - `make staging` to start the staging server
