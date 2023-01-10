@@ -1,4 +1,4 @@
-# Next.js Template
+# Next.js Application Template
 
 ## Status
 
@@ -6,7 +6,7 @@
 
 ## Project Description
 
-Template repository to generate Next.js TypeScript applications.
+Template repository to quickly start developing Next.js and TypeScript applications.
 
 ## Prerequisites
 

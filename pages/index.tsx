@@ -39,7 +39,7 @@ const IndexPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main>
-        <H1>Next.js Template</H1>
+        <H1>Next.js Application Template</H1>
         <p>
           This is a template repository to quickly start developing Next.js and
           TypeScript applications.

@@ -11,7 +11,7 @@ exports[`IndexPage should render correctly 1`] = `
         <h1
           class="sc-gswNZR"
         >
-          Next.js Template
+          Next.js Application Template
         </h1>
         <p>
           This is a template repository to quickly start developing Next.js and TypeScript applications.
@@ -26,7 +26,7 @@ exports[`IndexPage should render correctly 1`] = `
       <h1
         class="sc-gswNZR"
       >
-        Next.js Template
+        Next.js Application Template
       </h1>
       <p>
         This is a template repository to quickly start developing Next.js and TypeScript applications.

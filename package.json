@@ -1,6 +1,19 @@
 {
-  "name": "nextjs-template",
-  "version": "0.1.0",
+  "name": "nextjs-application-template",
+  "description": "Template repository to quickly start developing Next.js and TypeScript applications.",
+  "keywords": [
+    "next.js",
+    "typescript",
+    "project starter"
+  ],
+  "homepage": "https://github.com/Jon1701/nextjs-application-template",
+  "license": "GPL-3.0-or-later",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jon Balon",
+    "email": "jon1701-github.87noi@simplelogin.com",
+    "url": "https://jonbalon.com/"
+  },
   "private": true,
   "dependencies": {
     "@next/font": "13.1.1",
