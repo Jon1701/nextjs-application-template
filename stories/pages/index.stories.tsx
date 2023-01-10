@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentMeta } from '@storybook/react';
 import GlobalStyle from '@components/GlobalStyle';
 
-import IndexPage from './index';
+import IndexPage from '@pages/index';
 
 export default {
   component: IndexPage,
