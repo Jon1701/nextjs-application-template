@@ -16,6 +16,7 @@ Template repository to generate Next.js TypeScript applications.
 - [Visual Studio Code](https://code.visualstudio.com)
   - [ESLint](https://open-vsx.org/extension/dbaeumer/vscode-eslint) Extension
   - [Prettier - Code Formatter](https://open-vsx.org/extension/esbenp/prettier-vscode) Extension
+  - [Stylelint](https://open-vsx.org/extension/stylelint/vscode-stylelint) Extension
 
 ## Commands
 
