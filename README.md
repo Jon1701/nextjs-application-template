@@ -18,6 +18,43 @@ Template repository to generate Next.js TypeScript applications.
   - [Prettier - Code Formatter](https://open-vsx.org/extension/esbenp/prettier-vscode) Extension
   - [Stylelint](https://open-vsx.org/extension/stylelint/vscode-stylelint) Extension
 
+## Project Folder Structure
+
+```
+|
+├── __tests__/                      # Tests only for Pages
+|       └── pages/                  # Tests only for Pages
+|             └── __snapshots__/    # Generated snapshots
+|
+├── .next/                          # Build Folder
+├── .storybook/                     # Storybook Configuration Files
+├── .vscode/
+|       └── settings.json           # VSCode Settings
+├── components/                     # Reusable Components
+├── coverage/                       # Jest Code Coverage Reports
+├── node_modules/                   # Node Dependencies Folder
+├── pages/                          # Next.js Pages
+├── public/                         # Public Assets
+├── stories/                        # Storybook Stories for Pages
+|     └── pages/                    # Storybook Stories for Pages
+|
+├── .eslintrc.json                  # ESLint Configuration File
+├── .gitignore                      # Files/Folders ignored by Git
+├── .npmrc                          # npm Configuration File
+├── .prettierignore                 # Files/Folders ignored by Prettier
+├── jest.config.ts                  # Jest Configuration File
+├── Makefile                        # Contains build targets
+├── next-env.d.ts                   # Registers Next.js Types with TS Compiler
+├── package-lock.json               # Dependency tree.
+├── package.json                    # Project metadata, lists dependencies
+├── prettier.config.js              # Prettier Configuration File
+├── README.md                       # Repository documentation
+├── stylelint.config.js             # Stylelint Configuration File
+├── tsconfig.json                   # TypeScript Configuration File
+└── tsconfig.tsbuildinfo            # Incremental Compilation Information
+
+```
+
 ## Commands
 
 The following `make` commands are available:
