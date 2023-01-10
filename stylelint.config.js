@@ -6,6 +6,9 @@ const config = {
     'stylelint-config-prettier',
   ],
   customSyntax: 'postcss-scss',
+  rules: {
+    'declaration-empty-line-before': null,
+  },
 };
 
 module.exports = config;
