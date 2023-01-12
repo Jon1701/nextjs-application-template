@@ -4,9 +4,18 @@
 
 `Active`
 
-## Project Description
+## Description
 
-Template repository to quickly start developing Next.js and TypeScript applications.
+Template repository to quickly start developing React TypeScript applications using the Next.js framework.
+
+### Features
+
+- Framework: Next.js with React and TypeScript
+- Styling Tool: Styled-Components
+- Linters and Formatters: ESLint, Prettier, Stylelint
+- Testing: Jest, React Testing Library
+- UI Workshop: Storybook
+- Transpiler: SWC
 
 ## Prerequisites
 
