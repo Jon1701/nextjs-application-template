@@ -22,9 +22,11 @@ Template repository to quickly start developing Next.js and TypeScript applicati
 
 ```
 |
-├── __tests__/                      # Tests only for Pages
-|       └── pages/                  # Tests only for Pages
-|             └── __snapshots__/    # Generated snapshots
+├── __pages__/                      # Tests & Stories for Pages only
+|       ├── __tests__/              # Tests for Pages
+|       |       └── __snapshots__/  # Generated snapshots
+|       |
+|       └── stories/                # Stories for Pages
 |
 ├── .next/                          # Build Folder
 ├── .storybook/                     # Storybook Configuration Files
@@ -35,8 +37,6 @@ Template repository to quickly start developing Next.js and TypeScript applicati
 ├── node_modules/                   # Node Dependencies Folder
 ├── pages/                          # Next.js Pages
 ├── public/                         # Public Assets
-├── stories/                        # Storybook Stories for Pages
-|     └── pages/                    # Storybook Stories for Pages
 |
 ├── .eslintrc.json                  # ESLint Configuration File
 ├── .gitignore                      # Files/Folders ignored by Git
